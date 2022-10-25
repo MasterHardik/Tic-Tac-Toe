@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="TTT.css">
+       <!-- <title>Tic Tac Toe</title> -->
+</head>
+<body>
+    <!-- <button id="bg-change-btn" onclick="changeColor()">Change Color</button> -->
+    <main class="screen" id="screen">
+        <img src="./TTT_IMG/TicTacToeBG_W.jpg" id="screen-img" alt="">
+        <table border="0" >
+            <tr>
+                <td onclick="step(this)"></td>
+                <td onclick="step(this)"></td>
+                <td onclick="step(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="step(this)"></td>
+                <td onclick="step(this)"></td>
+                <td onclick="step(this)"></td>
+            </tr>
+            <tr>
+                <td onclick="step(this)"></td>
+                <td onclick="step(this)"></td>
+                <td onclick="step(this)"></td>
+            </tr>
+        </table>
+    </main>
+    <button id="clear-btn" onclick="document.location.reload()">New Game</button>
+    <button id="color-btn" onclick="chageTheme()">Chage Theme</button>
+    <img src="./TTT_IMG/Game_Title.jpg" id="game-title">
+    <script src="TTT.js"></script>
+    <footer>
+        @By MasterHardik
+    </footer>
+</body>
+</html>

@@ -1,2 +1,3 @@
-# Tic-Tac-ToeJS-Mini-Project
-Simplest Tic-Tac-Toe
+## Tic Tac Toe Game
+# Java Script-Mini-Project 
+Unlimited paperless gaming.
