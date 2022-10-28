@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="TTT.css">
-       <!-- <title>Tic Tac Toe</title> -->
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="TTT.css" />
+    <!-- <title>Tic Tac Toe</title> -->
+  </head>
+  <body>
     <!-- <button id="bg-change-btn" onclick="changeColor()">Change Color</button> -->
     <main class="screen" id="screen">
-        <img src="./TTT_IMG/TicTacToeBG_W.jpg" id="screen-img" alt="">
-        <table border="0" >
-            <tr>
-                <td onclick="step(this)"></td>
-                <td onclick="step(this)"></td>
-                <td onclick="step(this)"></td>
-            </tr>
-            <tr>
-                <td onclick="step(this)"></td>
-                <td onclick="step(this)"></td>
-                <td onclick="step(this)"></td>
-            </tr>
-            <tr>
-                <td onclick="step(this)"></td>
-                <td onclick="step(this)"></td>
-                <td onclick="step(this)"></td>
-            </tr>
-        </table>
+      <p class="turn" id="turn">Player 1 turn</p>
+      <button id="clear-btn" onclick="gameReload()">New Game</button>
+      <br />
+      <button id="color-btn" onclick="chageTheme()">Chage Theme</button>
+      <img src="./TTT_IMG/TicTacToeBG_W.jpg" id="screen-img" alt="" />
+      <table border="0">
+        <tr class="row">
+          <!-- for traaking the coordinated we need to pass to mre thing as  -->
+          <td onclick="step(this,0,0)" class="col"></td>
+          <td onclick="step(this,0,1)" class="col"></td>
+          <td onclick="step(this,0,2)" class="col"></td>
+        </tr>
+        <tr class="row">
+          <td onclick="step(this,1,0)" class="col"></td>
+          <td onclick="step(this,1,1)" class="col"></td>
+          <td onclick="step(this,1,2)" class="col"></td>
+        </tr>
+        <tr class="row">
+          <td onclick="step(this,2,0)" class="col"></td>
+          <td onclick="step(this,2,1)" class="col"></td>
+          <td onclick="step(this,2,2)" class="col"></td>
+        </tr>
+      </table>
     </main>
-    <button id="clear-btn" onclick="gameReload()">New Game</button>
-    <button id="color-btn" onclick="chageTheme()">Chage Theme</button>
-    <img src="./TTT_IMG/Game_Title.jpg" id="game-title">
+    <img src="./TTT_IMG/Game_Title.jpg" id="game-title" />
     <script src="TTT.js"></script>
-    <footer>
-        @By MasterHardik
-    </footer>
-</body>
+    <footer>@By MasterHardik</footer>
+  </body>
 </html>
