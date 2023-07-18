@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dashboard {
+  gap: 5px;
+  height: 150px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.board {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  width: 60%;
+  height: 100%;
+  margin-right: 15%;
+}
+
+button,
+.dashboard p {
+  height: 40px;
+  width: 120px;
+  border-radius: 6px;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#turn {
+  padding-top: 10px;
+}
+
+#game-title {
+  height: 60px;
+  width: 250px;
+}
+
+table {
+  height: 80%;
+  width: 100%;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+td {
+  width: 33%;
+  height: 33%;
+  font-size: 70px;
+  text-align: center;
+}
+
+footer {
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+  #turn {
+    padding: 0;
+  }
+  .dashboard {
+    height: 60px;
+    flex-direction: row;
+  }
+  button,
+  .dashboard p {
+    height: 40px;
+    width: 80px;
+    border-radius: 6px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #game-title {
+    height: 40px;
+    width: 150px;
+  }
+
+  .board {
+    margin: 0;
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/TTT.css" />
+    <!-- <title>Tic Tac Toe</title> -->
+  </head>
+  <body>
+    <!-- <button id="bg-change-btn" onclick="changeColor()">Change Color</button> -->
+    <div class="container">
+      <div class="dashboard">
+        <p class="turn" id="turn">Player 1 turn</p>
+        <button id="clear-btn" onclick="gameReload()">New Game</button>
+        <button id="color-btn" onclick="changeTheme()">Chage Theme</button>
+      </div>
+      <div class="board" id="board">
+        <img src="./TTT_IMG/Game_Title.jpg" id="game-title" />
+        <!-- <img src="./TTT_IMG/TicTacToeBG_W.jpg" id="screen-img" alt="" /> -->
+        <table border="1" id="tab">
+          <tr class="row">
+            <!-- for traaking the coordinated we need to pass to more parameters as  -->
+            <td onclick="step(this,0,0)" class="col"></td>
+            <td onclick="step(this,0,1)" class="col"></td>
+            <td onclick="step(this,0,2)" class="col"></td>
+          </tr>
+          <tr class="row">
+            <td onclick="step(this,1,0)" class="col"></td>
+            <td onclick="step(this,1,1)" class="col"></td>
+            <td onclick="step(this,1,2)" class="col"></td>
+          </tr>
+          <tr class="row">
+            <td onclick="step(this,2,0)" class="col"></td>
+            <td onclick="step(this,2,1)" class="col"></td>
+            <td onclick="step(this,2,2)" class="col"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <footer class="footer">@MasterHardik &copy;2023 All Rights Reserved</footer>
+    <script src="./js/TTT.js"></script>
+    <script src="./js/theme.js"></script>
+  </body>
+</html>
